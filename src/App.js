@@ -5,9 +5,6 @@ import ResultsDisplay from './components/ResultsDisplay'
 const App = () => {
   const [buyShares, setBuyShares] = useState(0)
 
-  // results passed to ResultsDisplay
-  const [numSharesToBuy, setNumSharesToBuy] = useState(0)
-
   return (
     <div className='App'>
       <header className='App-header'></header>
