@@ -72,7 +72,7 @@ const AverageCostForm = ({ calcBuyShares }) => {
         <input
           type='submit'
           className='btn btn-block'
-          value='Get # of Shares to Buy'
+          value='# of Shares to Buy'
         />
       </div>
     </form>
