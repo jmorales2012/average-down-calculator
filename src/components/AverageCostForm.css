@@ -1,0 +1,17 @@
+.average-cost-form {
+  margin: 10px auto;
+  height: auto;
+  width: 600px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control {
+  text-align: center;
+}
+
+.form-control * {
+  margin: 10px 5px;
+}

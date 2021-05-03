@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './AverageCostForm.css'
 
 const AverageCostForm = ({ calcBuyShares }) => {
   const [numShares, setNumShares] = useState(0)
@@ -30,46 +31,50 @@ const AverageCostForm = ({ calcBuyShares }) => {
   }
 
   return (
-    <form className='avg-cost-form' onSubmit={onSubmit}>
+    <form className='average-cost-form' onSubmit={onSubmit}>
       <div className='form-control'>
         <label># of Shares You Currently Own</label>
+        <br />
         <input
           type='text'
           required
-          placeholder='Enter # of shares'
+          placeholder='# of shares you own'
           onChange={(e) => setNumShares(e.target.value)}
         />
         <br />
-        <label>Current Average Cost</label>
+        <label>Your Current Average Cost</label>
+        <br />
         <input
           type='text'
           required
-          placeholder='Enter Average Cost'
+          placeholder='Average Cost'
           onChange={(e) => setAvgCost(e.target.value)}
         />
         <br />
         <label>Current Price of Stock</label>
+        <br />
         <input
           type='text'
           required
-          placeholder='Enter Current Price'
+          placeholder='Current Price'
           onChange={(e) => setCurPrice(e.target.value)}
         />
         <br />
         <label>Target Average Cost</label>
+        <br />
         <input
           type='text'
           required
-          placeholder='Enter Target Average'
+          placeholder='Target Average'
           onChange={(e) => setTargetAvg(e.target.value)}
         />
+        <br />
+        <input
+          type='submit'
+          className='btn btn-block'
+          value='Get # of Shares to Buy'
+        />
       </div>
-
-      <input
-        type='submit'
-        className='btn btn-block'
-        value='Get # of Shares to Buy'
-      />
     </form>
   )
 }
