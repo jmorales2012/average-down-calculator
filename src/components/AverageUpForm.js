@@ -61,7 +61,7 @@ const AverageUpForm = () => {
           <input
             type='text'
             required
-            placeholder='numSharesBuy'
+            placeholder='# of shares you want to buy'
             onChange={(e) => setNumSharesBuy(e.target.value)}
           />
           <br />
