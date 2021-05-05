@@ -1,15 +1,19 @@
 import { useState } from 'react'
-import AverageCostForm from './components/AverageCostForm'
-import ResultsDisplay from './components/ResultsDisplay'
+import FormSelection from './components/FormSelection'
+import AverageDownForm from './components/AverageDownForm'
+import AverageUpForm from './components/AverageUpForm'
+import './App.css'
 
 const App = () => {
-  const [buyShares, setBuyShares] = useState(0)
+  const [formSelection, setFormSelection] = useState(1)
 
   return (
     <div className='App'>
-      <header className='App-header'></header>
-      <AverageCostForm calcBuyShares={(value) => setBuyShares(value)} />
-      <ResultsDisplay shares={buyShares} />
+      <FormSelection
+        defaultChecked={formSelection}
+        onClick={(value) => setFormSelection(value)}
+      />
+      {formSelection == 1 ? <AverageDownForm /> : <AverageUpForm />}
     </div>
   )
 }

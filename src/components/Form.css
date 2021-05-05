@@ -15,3 +15,7 @@
 .form-control * {
   margin: 10px 5px;
 }
+
+.results-display {
+  text-align: center;
+}
