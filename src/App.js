@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import FormSelection from './components/FormSelection'
 import AverageDownForm from './components/AverageDownForm'
-import AverageUpForm from './components/AverageUpForm'
+import AverageCostForm from './components/AverageCostForm'
 import './App.css'
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
         defaultChecked={formSelection}
         onClick={(value) => setFormSelection(value)}
       />
-      {formSelection == 1 ? <AverageDownForm /> : <AverageUpForm />}
+      {formSelection == 1 ? <AverageDownForm /> : <AverageCostForm />}
     </div>
   )
 }

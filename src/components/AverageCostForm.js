@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Form.css'
 
-const AverageUpForm = () => {
+const AverageCostForm = () => {
   const [numShares, setNumShares] = useState(0)
   const [avgCost, setAvgCost] = useState(0)
   const [curPrice, setCurPrice] = useState(0)
@@ -80,4 +80,4 @@ const AverageUpForm = () => {
   )
 }
 
-export default AverageUpForm
+export default AverageCostForm
